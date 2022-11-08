@@ -1,0 +1,75 @@
+---
+import PersonCard from './PersonCard.astro'
+
+const people = [
+  {
+    name: 'Pablo Sirera',
+    ages: [2018, 2019, 2020, 2021],
+    img: 'https://avatars.githubusercontent.com/u/25353031?v=4',
+    github: 'https://github.com/pablosirera',
+    twitter: 'https://twitter.com/pablosirera'
+  },
+  {
+    name: 'Pablo Sirera',
+    ages: [2018, 2019, 2020, 2021],
+    img: 'https://avatars.githubusercontent.com/u/25353031?v=4',
+    github: 'https://github.com/pablosirera',
+    twitter: 'https://twitter.com/pablosirera'
+  },
+  {
+    name: 'Pablo Sirera',
+    ages: [2018, 2019, 2020, 2021],
+    img: 'https://avatars.githubusercontent.com/u/25353031?v=4',
+    github: 'https://github.com/pablosirera',
+    twitter: 'https://twitter.com/pablosirera'
+  },
+  {
+    name: 'Pablo Sirera',
+    ages: [2018, 2019, 2020, 2021],
+    img: 'https://avatars.githubusercontent.com/u/25353031?v=4',
+    github: 'https://github.com/pablosirera',
+    twitter: 'https://twitter.com/pablosirera'
+  },
+  {
+    name: 'Pablo Sirera',
+    ages: [2018, 2019, 2020, 2021],
+    img: 'https://avatars.githubusercontent.com/u/25353031?v=4',
+    github: 'https://github.com/pablosirera',
+    twitter: 'https://twitter.com/pablosirera'
+  },
+  {
+    name: 'Pablo Sirera',
+    ages: [2018, 2019, 2020, 2021],
+    img: 'https://avatars.githubusercontent.com/u/25353031?v=4',
+    github: 'https://github.com/pablosirera',
+    twitter: 'https://twitter.com/pablosirera'
+  },
+  {
+    name: 'Pablo Sirera',
+    ages: [2018, 2019, 2020, 2021],
+    img: 'https://avatars.githubusercontent.com/u/25353031?v=4',
+    github: 'https://github.com/pablosirera',
+    twitter: 'https://twitter.com/pablosirera'
+  },
+  {
+    name: 'Pablo Sirera',
+    ages: [2018, 2019, 2020, 2021],
+    img: 'https://avatars.githubusercontent.com/u/25353031?v=4',
+    github: 'https://github.com/pablosirera',
+    twitter: 'https://twitter.com/pablosirera'
+  }
+]
+---
+
+<h3 class="section-title">Participantes</h3>
+<section class="people-section">
+  {people.map((person) => <PersonCard {...person} />)}
+</section>
+
+<style>
+  .people-section {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, 20rem);
+  }
+</style>

@@ -1,0 +1,29 @@
+---
+// Component Imports
+import MainHead from '../components/MainHead.astro'
+import BaseNav from '../components/BaseNav.vue'
+import BaseHero from '../components/BaseHero.vue'
+import Footer from '../components/Footer.astro'
+import PeopleList from '../components/PeopleList.astro'
+import AboutMe from '../components/AboutMe.astro'
+---
+
+<html lang="en">
+  <head>
+    <MainHead
+      title="Jeanine White: Personal Site"
+      description="Jeanine White: Developer, Speaker, and Writer..."
+    />
+  </head>
+  <body>
+    <BaseNav />
+    <BaseHero />
+    <main class="wrapper">
+      <div id="people">
+        <PeopleList />
+      </div>
+      <AboutMe />
+    </main>
+    <Footer />
+  </body>
+</html>
